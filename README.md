@@ -20,12 +20,15 @@ Service → Monitor → LLM Decision Engine → Recovery Engine
 ```bash
 uvicorn app.main:app --reload
 python app/monitor.py
+```
 
-Docker (Optional)
+## Docker (Optional)
+```bash
 docker build -t self-healing-backend .
 docker run -p 8000:8000 self-healing-backend
+```
 
-Why This Project
+## Why This Project
 
 This project demonstrates reliability engineering, observability,
 and AI-driven decision-making in backend systems.
