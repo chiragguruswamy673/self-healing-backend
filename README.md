@@ -65,8 +65,7 @@ Action: Clear Cache
 Reason: Memory usage is critically high
 
 ### Result
-Recovery executed automatically
-
+Recovery executed automatically.
 The system continuously monitors and re-evaluates the service after recovery.
 
 ---
@@ -116,7 +115,7 @@ python app/monitor.py
 The system will begin monitoring and automatically trigger recovery
 actions when anomalies are detected.
 
-# 📈 Why This Project Is Important
+## 📈 Why This Project
 Most backend systems:
 - Alert humans when something breaks
 This system:
