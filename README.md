@@ -1,122 +1,138 @@
-# 🧠 AI-Powered Requirement → Backend Generator
+# 🚑 Self-Healing Backend System
 
-An autonomous AI system that converts **plain English requirements**
-into a **production-ready backend codebase** with APIs, authentication,
-database models, and project structure.
+An AI-assisted backend system that continuously monitors service health
+and system metrics, detects anomalies, and **automatically triggers
+recovery actions without human intervention**.
 
-This project demonstrates how **AI agents can replace manual scaffolding**
-and dramatically accelerate backend development.
+This project demonstrates how **autonomous systems and LLM-style reasoning**
+can be applied to backend reliability engineering.
 
 ---
 
 ## 🎯 Problem Statement
 
-Backend development often starts with:
-- Repeated boilerplate
-- Manual API planning
-- Copy–paste architecture decisions
-- Slow setup time
+Traditional backend systems:
+- Detect failures
+- Raise alerts
+- Depend on human operators to fix issues
 
-This project solves that by introducing an **AI-driven software delivery
-pipeline** that:
-- Understands requirements
-- Plans backend architecture
-- Generates clean, structured code automatically
+This leads to:
+- Delayed recovery
+- Increased downtime
+- Operational overhead
+
+The **Self-Healing Backend System** solves this by introducing an
+**intelligent recovery loop** that can detect, diagnose, and fix
+issues on its own.
 
 ---
 
 ## ✨ Key Features
 
-- 🧠 **Requirement Planning Agent**
-- 🧱 **Backend Code Generation Agent**
-- 🔐 **Authentication & JWT support**
-- 🗄️ **Database models & CRUD logic**
-- 🚀 **FastAPI-based production backend**
-- 🐳 **Docker-ready architecture**
-- 📂 **Clean project scaffolding**
+- 📡 **Health Monitoring** (Service availability)
+- 📊 **System Metrics Collection** (CPU & Memory)
+- 🧠 **LLM-Style Decision Engine**
+- 🚑 **Automated Recovery Actions**
+- 📝 **Structured Logging**
+- 🐳 **Dockerized Design (Optional)**
 
 ---
 
-##  Architecture
+## 🏗️ High-Level Architecture
 
-User Requirement (Text)
+Service Health & Metrics
 ↓
-Requirement Planner Agent
+Monitoring Engine
 ↓
-Backend Architecture Plan
+Decision Engine (LLM-style)
 ↓
-Code Generation Agent
+Recovery Engine
 ↓
-Production-Ready Backend
+Self-Healing Action
 
-## **Output**
-- main.py
-- auth.py
-- models.py
-- crud.py
-- Dockerfile
-- README.md
-  
+
 ---
 
-## 🧾 Example Input
+## 🧪 Example Scenario
 
-```json
-{
-  "requirement": "Build an authentication service with user registration and login"
-}
-```
-## 📤 Example Output
-- main.py
-- auth.py
-- models.py
-- crud.py
-- JWT-based authentication
-- REST APIs
+###  Detected State
+Service Status: UP
+Memory Usage: 91%
+CPU Usage: 20%
+
+### AI Decision
+Action: Clear Cache
+Reason: Memory usage is critically high
+
+### Result
+Recovery executed automatically
+
+The system continuously monitors and re-evaluates the service after recovery.
+
+---
 
 ## 🧠 How It Works
-User submits a natural language requirement
-Planning agent extracts:
-- Entities
-- Features
-- API contracts
-Code agent generates:
-- API routes
-- Models
-- Auth logic
--Project structure
-Backend is immediately runnable
+
+1. The backend exposes a `/health` endpoint
+2. A monitoring process collects:
+   - Service status
+   - CPU usage
+   - Memory usage
+3. The decision engine analyzes metrics
+4. Root cause is inferred using AI-style logic
+5. A recovery action is executed
+6. The event is logged for observability
+
+---
 
 ## 🛠️ Tech Stack
-- Backend- FastAPI
-- AI Logic - Agent based architecture
-- Auth	- JWT
-- Database	- SQLAlchemy
-- Language	- Python
-- DevOps	- Docker 
+
+- Backend - FastAPI 
+- Monitoring - `psutil` 
+- Decision Logic - LLM-style agent 
+- Automation - Python 
+- Logging File - based logs 
+- DevOps - Docker  
+
+---
 
 ## ▶️ Running Locally
-```
-bash
+
+### 1️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-uvicorn app.main:app --reload
 ```
+### 2️⃣ Start Backend Service
+```bash
+uvicorn app.main:app --reload
+Verify health:
+http://127.0.0.1:8000/health
+```
+### 3️⃣ Start Monitoring Agent
+```
+python app/monitor.py
+```
+The system will begin monitoring and automatically trigger recovery
+actions when anomalies are detected.
 
-## 🎯 Why This Project Is Special
-- Generate snippets
-- Lack structure
-- Aren’t production-ready
-
-This project:
-- Designs backend architecture
-- Generates complete systems
-- Mimics real software delivery pipelines
+# 📈 Why This Project Is Important
+Most backend systems:
+- Alert humans when something breaks
+This system:
+- Fixes itself
+It demonstrates:
+- Reliability engineering
+- Autonomous systems
+- AI-driven decision making
+- Production-style backend design
 
 ## 🚀 Future Enhancements
-- LLM-powered code refinement
-- Frontend generation
-- Cloud deployment support
-- Multi-service orchestration
+- Real LLM integration for richer reasoning
+- Kubernetes health hooks
+- Multi-service self-healing
+- Predictive anomaly detection
+- Persistent metrics storage
 
 ## 👤 Author
 Chirag Guruswamy
