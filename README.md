@@ -66,6 +66,7 @@ Reason: Memory usage is critically high
 
 ### Result
 Recovery executed automatically.
+
 The system continuously monitors and re-evaluates the service after recovery.
 
 ---
