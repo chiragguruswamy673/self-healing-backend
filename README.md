@@ -93,7 +93,7 @@ Backend is immediately runnable
 - Auth	- JWT
 - Database	- SQLAlchemy
 - Language	- Python
-- DevOps	- Docker (design-level)
+- DevOps	- Docker 
 
 ## ▶️ Running Locally
 ```
