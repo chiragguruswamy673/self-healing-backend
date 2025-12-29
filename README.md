@@ -49,18 +49,14 @@ Code Generation Agent
 ↓
 Production-Ready Backend
 
-yaml
-Copy code
-
-<<<<<<< HEAD
-**Output**
+## **Output**
 - main.py
 - auth.py
 - models.py
 - crud.py
 - Dockerfile
 - README.md
-=======
+  
 ---
 
 ## 🧾 Example Input
@@ -71,44 +67,24 @@ Copy code
 }
 ```
 ## 📤 Example Output
-main.py
-
-auth.py
-
-models.py
-
-crud.py
->>>>>>> 249e402 (Modified)
-
-JWT-based authentication
-
-REST APIs:
-
-POST /register
-
-POST /login
+- main.py
+- auth.py
+- models.py
+- crud.py
+- JWT-based authentication
+- REST APIs
 
 ## 🧠 How It Works
 User submits a natural language requirement
-
 Planning agent extracts:
-
-Entities
-
-Features
-
-API contracts
-
+- Entities
+- Features
+- API contracts
 Code agent generates:
-
-API routes
-
-Models
-
-Auth logic
-
-Project structure
-
+- API routes
+- Models
+- Auth logic
+-Project structure
 Backend is immediately runnable
 
 ## 🛠️ Tech Stack
@@ -127,37 +103,20 @@ uvicorn app.main:app --reload
 ```
 
 ## 🎯 Why This Project Is Special
-Most code generators:
-
-<<<<<<< HEAD
-## 🔮 Future Improvements
-- Plug in real LLM APIs
-- Support multiple entities
-- Frontend scaffolding
-- CI/CD integration
-=======
-Generate snippets
-
-Lack structure
-
-Aren’t production-ready
+- Generate snippets
+- Lack structure
+- Aren’t production-ready
 
 This project:
-
-Designs backend architecture
-
-Generates complete systems
-
-Mimics real software delivery pipelines
+- Designs backend architecture
+- Generates complete systems
+- Mimics real software delivery pipelines
 
 ## 🚀 Future Enhancements
-LLM-powered code refinement
-
-Frontend generation
-
-Cloud deployment support
-
-Multi-service orchestration
+- LLM-powered code refinement
+- Frontend generation
+- Cloud deployment support
+- Multi-service orchestration
 
 👤 Author
 Chirag Guruswamy
