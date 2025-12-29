@@ -118,5 +118,5 @@ This project:
 - Cloud deployment support
 - Multi-service orchestration
 
-👤 Author
+## 👤 Author
 Chirag Guruswamy
